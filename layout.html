@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Counter component</title>
+  </head>
+  <body>
+
+    <main class="main">
+      <div class="main__inner">
+        <!-- TOP SECTION -->
+        <div class="top__section">
+          <h1 class="top__title">Scroll down</h1>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <!-- END OF TOP SECTION -->
+        <!-- MAIN SECTION -->
+        <div class="content">
+          <h2 class="content__title animate__item">
+            {{title}}
+          </h2>
+          <div class=" content__items list">
+            {{#each sections}}
+              <div class="list__item animate__item">
+                <i class="{{this.icon}} list__item-image"></i>
+                <div class="list__item-count count">
+                  <div class="count__prefix">{{this.number.prefix}}</div>
+                  <div class="count__number counter">{{this.number.value}}</div>
+                  <div class="count__sufix">{{this.number.suffix}}</div>
+                </div>
+                <p class="list__item-text">{{this.paragraph}}</p>
+              </div>
+            {{/each}}
+          </div>
+        </div>
+        <!-- END OF MAIN SECTION -->
+      </div>
+    </main>
+
+    <script src="https://kit.fontawesome.com/af9bab70c0.js"></script>
+    <script src="./js/lib/jquery.js"></script>
+    <script src="./js/lib/waypoints.js"></script>
+    <script src="./js/lib/jquery.counterup.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
