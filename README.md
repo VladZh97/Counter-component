@@ -1,3 +1,8 @@
+## Component publish on:
+````
+https://appvlad-1.herokuapp.com/
+````
+
 # Front-end developer task
 
 ### Prerequisites
